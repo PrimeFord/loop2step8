@@ -1,0 +1,66 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: black;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container {
+    background-color: hsl(220deg 30% 96%);
+    height: 100%;
+    width: 72%;
+}
+.phone {
+    background-color: aqua;
+    margin: 6.5rem auto 0;
+    height: 30rem;
+    width: 18rem;
+    border: 10px solid black;
+    border-radius: 40px;
+    background: linear-gradient(208deg, hsl(220deg 88% 64%) 30%, hsl(0deg 0% 97%) 30%);
+}
+.phone::after {
+    background-color: black;
+    content: "";
+    position: absolute;
+    height: 1.5rem;
+    width: 10rem;
+    border-radius: 8px;
+    right: 37.7rem;
+    top: 6.8rem;
+}
+/* .edge::before {
+    height: 9px;
+    width: 9px;
+    border-radius: 50%;
+    background-color: hsl(220deg 88% 64%);
+    position: absolute;
+    content: "";
+    right: 37.15rem;
+    top: 7.02rem;
+    z-index: 1;
+} */
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+}
+.card p {
+    color: white;
+    font-size: 12px;
+    font-weight: 600;
+    padding-bottom: 1rem;
+}
+.card img {
+    height: 10rem;
+    width: 15rem;
+}
