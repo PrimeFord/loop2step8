@@ -64,3 +64,68 @@ body {
     height: 10rem;
     width: 15rem;
 }
+.options {
+  height: 10rem;
+  width: 100%;
+  margin-top: 2rem;
+  padding: 0 0.8rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.list {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.list img {
+  scale: 0.7;
+}
+.info {
+  width: 10rem;
+}
+.info h3 {
+  font-size: 12px;
+}
+.info p {
+  color: gray;
+  font-size: 11px;
+}
+.switch {
+    position: relative;
+    width: 42px;
+    height: 24.5px;
+    display: inline-block;
+}
+.switch input {
+    display: none;
+}
+.slider {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    border-radius: 50px;
+    background-color: white;
+    border: 1px solid rgba(128, 128, 128, 0.452);
+    cursor: pointer;
+}
+.slider::before {
+    position: absolute;
+    left: 0px;
+    top: -1px;
+    content: "";
+    width: 22px;
+    height: 22px;
+    background-color: white;
+    border: 1px solid rgba(128, 128, 128, 0.452);
+    border-radius: 50%;
+}
+input:checked + .slider::before {
+    transform: translateX(18px);
+    scale: 0.90;
+}
+input:checked + .slider {
+    background-color: hsl(220deg 88% 64%);
+}
