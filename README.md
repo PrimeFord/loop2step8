@@ -1,5 +1,5 @@
 # loop2step8
-*An implementation of Baak Cards with HTML/CSS*
+*An implementation of Bank Cards with HTML/CSS*
 
 ## Getting Started
 Clone or download this repository and run with a local server of open `index.html` with your favorite browser
